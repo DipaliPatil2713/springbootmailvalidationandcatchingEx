@@ -40,7 +40,7 @@ public class EmployeeServiceImpl implements  IEmployeeService{
     @Override
     @Cacheable(value = "empId")
     public Optional<Employee> findById(int empId) {
-        log.info("#########Trying to fetch data from database");
+        log.info("#########Trying to fetch data from database ##########");
         return employeeRepository.findById(empId);
     }
 
